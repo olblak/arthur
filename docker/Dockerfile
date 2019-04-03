@@ -51,7 +51,7 @@ RUN \
   pip3 install --user --no-index --find-links=/arthur/wheels .
 
 # /tmp is used by arthur to store temp files like git repository
-VOLUME ["/tmp", "/arthur/logs"]
+VOLUME ["/tmp", "/arthur/logs", "/archives"]
 
 ENTRYPOINT [\
   "/bin/sh", "-c", \
